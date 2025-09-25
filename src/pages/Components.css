@@ -1,0 +1,55 @@
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.badges-variations {
+    /* background-color: var(--black); */
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 0.5rem;
+
+    /* prevent items from stretching*/
+    align-items: start;
+    justify-items: center;
+}
+
+.banner-variations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-variations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+
+    /* prevent items from stretching*/
+    align-items: start;
+    justify-items: center;
+    
+    /* background-color: lightgray; */
+    padding: 10px;
+
+}
+
+@media (max-width: 800px) {
+  .card-variations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.testimonial-variations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(223, 223, 228);
+    width: auto;
+}
+
+

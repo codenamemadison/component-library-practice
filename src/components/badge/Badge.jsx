@@ -1,14 +1,14 @@
 import "./Badge.css"
-import { colorSchemes } from "./badgeColorSchemes"
+import badgeColorSchemes from "../../colorSchemes/badgeColorSchemes"
 export default function Badge({shape, colorScheme, children}) {
     
     return (
         <div 
-            className="badge-container"
+            className="badge-ui"
             style={{ 
                 borderRadius: shape == "square" ? "0px" : "16px",
-                backgroundColor: colorSchemes[colorScheme].bgColor,
-                color: colorSchemes[colorScheme].textColor
+                backgroundColor: badgeColorSchemes[colorScheme].bgColor,
+                color: badgeColorSchemes[colorScheme].textColor
 
             }}
         >

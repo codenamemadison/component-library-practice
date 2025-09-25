@@ -1,8 +1,5 @@
-body {
-    color: var(--black);
-}
 
-.badge-container {
+.badge-ui {
     margin: 0;
     display: inline-block;
     width: auto;
@@ -11,3 +8,4 @@ body {
     font-size: 20px;
     font-weight: 500;
 }
+

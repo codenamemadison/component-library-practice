@@ -1,0 +1,95 @@
+
+.testimonialUI{
+    background-color: #F9FAFB;
+    color: #111827;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    margin: 5rem 0rem;
+    width: auto;
+    max-width: 50rem;  
+    box-sizing: border-box;   /* include padding in width calc */
+
+    position: relative;
+}
+
+.desktop {
+    max-height:20rem;
+    padding: 5rem 5rem;
+    align-items: center;
+}
+.mobile {
+    width: 20rem;
+    height: auto;
+    padding: 50px 10px 75px 15px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.workcationLogo {
+    height: 25px;
+    z-index: 2;
+    align-self: center;
+}
+
+.quoteText {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 17px 0px;
+    width: 90%;
+    z-index: 2;
+}
+
+.quoteTextDesktop {
+    text-align: center;
+}
+
+.quoteTextMobile {
+    text-align: left;
+}
+
+.infoLine {
+    display: flex;
+    z-index: 2;
+}
+
+.infoLineDesktop {
+    flex-direction: row;
+    gap: 5px;
+}
+
+.infoLineMobile {
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nameText {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.companyPosText {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6B7280;
+}
+
+.dotPattern {
+    position: absolute;
+    z-index: 1;
+
+}
+
+.dotPatternDesktop {
+    left: -5px;
+    bottom: -20px;
+    scale: 0.9;
+}
+
+.dotPatternMobile {
+    left: -10px;
+    bottom: -50px;
+    /* scale: 0.75; */
+}

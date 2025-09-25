@@ -1,62 +1,41 @@
+import Banner from "../components/banner/Banner";
 import Section from "../components/Section";
-
-import Badge from "../components/badge/Badge"
-
-import { colorSchemes } from "../components/badge/badgeColorSchemes";
+import BadgeGallery from "./galleries/BadgeGallery"
+import BannerGallery from "./galleries/BannerGallery"
+import CardGallery from "./galleries/CardGallery"
+import TestimonialGallery from "./galleries/TestimonialGallery";
 
 export default function Components() {
-    const colors = Object.keys(colorSchemes)
     return (
         <>
             <Section
                 title="Badge"
                 description="Variations of Badge component"
             >
-                {colors.map((color, index) => {
-                    return (
-                        index < 4 && 
-                        (<Badge
-                            shape="square"
-                            colorScheme={color}
-                        >
-                            Badge
-                        </Badge>)
-                    )
-                })}
-                {colors.map((color, index) => {
-                    return (
-                        index < 4 && 
-                        (<Badge
-                            shape="pilled"
-                            colorScheme={color}
-                        >
-                            Badge
-                        </Badge>)
-                    )
-                })}
-                {colors.map((color, index) => {
-                    return (
-                        index >= 4 && 
-                        (<Badge
-                            shape="square"
-                            colorScheme={color}
-                        >
-                            Badge
-                        </Badge>)
-                    )
-                })}
-                {colors.map((color, index) => {
-                    return (
-                        index >= 4 && 
-                        (<Badge
-                            shape="pilled"
-                            colorScheme={color}
-                        >
-                            Badge
-                        </Badge>)
-                    )
-                })}
 
+                <BadgeGallery/>
+            </Section>
+
+            <Section
+                title="Banners"
+                description="Variations of Banner component (Success, Warning, Error, Neutral)"
+            >
+
+                <BannerGallery/>
+            </Section>
+
+            <Section
+                title="Cards"
+                description="Example use of using card UI to display a collection of info"
+            >
+                <CardGallery/>
+            </Section>
+
+            <Section
+                title="Testimonial"
+                description="Testimonial UI (desktop and mobile) – Two Versions"
+            >   
+                <TestimonialGallery/>
             </Section>
         </>
     )

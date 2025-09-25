@@ -1,6 +1,6 @@
 
 
-export const colorSchemes = {
+export const badgeColorSchemes = {
         "gray": {
             "bgColor" : "#F3F4F6",
             "textColor": "#1F2937"
@@ -35,3 +35,5 @@ export const colorSchemes = {
         },
         
     }
+
+    export default badgeColorSchemes;

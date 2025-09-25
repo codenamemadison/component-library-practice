@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: white;
+  background-color: rgb(200, 215, 227);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -50,5 +50,4 @@ a {
 
 a:hover {
   color: blue;
-}
 }
